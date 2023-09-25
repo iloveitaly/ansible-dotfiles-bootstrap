@@ -1,8 +1,4 @@
 ---
-- name: Set prefix to strip
-  ansible.builtin.set_fact:
-    dotfiles_prefix: "{{ dotfiles_start_with_dot | ternary('', '.') }}"
-
 - name: Ensure dotfiles repository is cloned locally.
   ansible.builtin.git:
     repo: "{{ dotfiles_repo }}"

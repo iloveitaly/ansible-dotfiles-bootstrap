@@ -45,30 +45,6 @@ When true, it will force clone the repository, overwriting any local changes.
 dotfiles_home: "~"
 ```
 
-The home directory where dotfiles will be linked. Generally, the default should work, but in some circumstances, or when running the role as sudo on behalf of another user, you may want to specify the full path.
-
-```
-dotfiles_files:
-  - ansible.cfg
-  - config/fish
-  - config/flake8
-  - config/yakuakerc
-  - gitconfig
-  - gitignore_global
-  - gitmessage
-  - inputrc
-  - selected_editor
-  - tmux.conf
-  - vim
-  - vimrc
-```
-
-Which files from the dotfiles repository should be linked to the `dotfiles_home`.
-
-```
-dotfiles_start_with_dot: false
-```
-
 Whether the files in the repository start with dot or not.
 
 ## Example Playbook

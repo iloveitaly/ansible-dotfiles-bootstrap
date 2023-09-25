@@ -38,8 +38,3 @@ arguments_specs:
         description: Path to home directory.
         required: false
         type: path
-      dotfiles_start_with_dot:
-        default: false
-        description: Are dotfiles stored with a dot in the repo?
-        required: false
-        type: bool

@@ -5,6 +5,4 @@ dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: false
 dotfiles_repo_local_destination: "~/dotfiles"
 dotfiles_force_clone: false
-
 dotfiles_home: "~"
-dotfiles_start_with_dot: false
