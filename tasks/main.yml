@@ -11,30 +11,28 @@
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
     force: "{{ dotfiles_force_clone }}"
     recursive: "{{ dotfiles_recursive }}"
+    update: yes
   become: false
 
-- name: Ensure all configured dotfiles are links.
-  ansible.builtin.command: "ls -F {{ dotfiles_home }}/{{ dotfiles_prefix }}{{ item }}"
-  register: existing_dotfile_info
-  failed_when: false
-  check_mode: false
-  changed_when: false
-  with_items: "{{ dotfiles_files }}"
-
-- name: Remove existing dotfiles file if a replacement is being linked.
-  ansible.builtin.file:
-    path: "{{ dotfiles_home }}/{{ dotfiles_prefix }}{{ dotfiles_files[item.0] }}"
-    state: absent
-  when: "'@' not in item.1.stdout"
-  with_indexed_items: "{{ existing_dotfile_info.results }}"
-  loop_control:
-    label: "{{ dotfiles_files[item.0] }}"
-
-- name: Link dotfiles into home folder.
-  ansible.builtin.file:
-    src: "{{ dotfiles_repo_local_destination }}/{{ item }}"
-    dest: "{{ dotfiles_home }}/{{ dotfiles_prefix }}{{ item }}"
-    state: link
-    mode: "u=rwX,g=rX,o=rX"
+- name: Find first existing script and run it
+  ansible.builtin.shell:
+    cmd: |
+      for script in install.sh install bootstrap.sh bootstrap script/bootstrap setup.sh setup script/setup; do
+        if [ -f "./$script" ]; then
+          echo "Executing dotfiles setup script: $script"
+          env
+          bash "./$script"
+          exit $?
+        fi
+      done
+    chdir: "{{ dotfiles_repo_local_destination }}"
+  register: bootstrap_output
   become: false
-  with_items: "{{ dotfiles_files }}"
+
+- name: Output from Dotfiles Bootstrap Script (stdout)
+  ansible.builtin.debug:
+    var: bootstrap_output.stdout_lines
+
+- name: Error Output from Dotfiles Bootstrap Script (stderr)
+  ansible.builtin.debug:
+    var: bootstrap_output.stderr_lines

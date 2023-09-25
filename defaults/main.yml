@@ -7,22 +7,4 @@ dotfiles_repo_local_destination: "~/dotfiles"
 dotfiles_force_clone: false
 
 dotfiles_home: "~"
-dotfiles_files:
-  - ansible.cfg
-  - config/fish
-  - config/flake8
-  - config/joshuto
-  - config/nvim
-  - config/yakuakerc
-  - gitconfig
-  - gitignore_global
-  - gitmessage
-  - inputrc
-  - kube/kubie.yaml
-  - selected_editor
-  - tmux
-  - tmux.conf
-  - tmux-powerlinerc
-  - vim
-  - vimrc
 dotfiles_start_with_dot: false

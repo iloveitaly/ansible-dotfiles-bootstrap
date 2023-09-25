@@ -38,25 +38,6 @@ arguments_specs:
         description: Path to home directory.
         required: false
         type: path
-      dotfiles_files:
-        default:
-          - ansible.cfg
-          - config/fish
-          - config/flake8
-          - config/yakuakerc
-          - gitconfig
-          - gitignore_global
-          - gitmessage
-          - inputrc
-          - selected_editor
-          - tmux
-          - tmux.conf
-          - vim
-          - vimrc
-        description: List to dotfiles to deploy.
-        required: false
-        type: list
-        elements: path
       dotfiles_start_with_dot:
         default: false
         description: Are dotfiles stored with a dot in the repo?
