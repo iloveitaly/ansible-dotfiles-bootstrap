@@ -1,6 +1,6 @@
 ---
 dotfiles_recursive: true
-dotfiles_repo: "https://gitlab.com/radek-sprta/dotfiles.git"
+dotfiles_repo: "https://gitlab.com/iloveitaly/dotfiles.git"
 dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: false
 dotfiles_repo_local_destination: "~/dotfiles"
