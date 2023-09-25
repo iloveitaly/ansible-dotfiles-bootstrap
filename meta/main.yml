@@ -4,10 +4,10 @@ dependencies: []
 galaxy_info:
   role_name: dotfiles
   namespace: radek_sprta
-  author: Radek Sprta
+  author: Michael Bianco
   description: Install a set of dotfiles from a given repository.
   license: MIT
-  issue_tracker_url: https://gitlab.com/radek-sprta/ansible-role-dotfiles/-/issues
+  issue_tracker_url: https://gitlab.com/iloveitaly/ansible-dotfiles-bootstrap/
   min_ansible_version: "2.10"
   platforms:
     - name: GenericUNIX

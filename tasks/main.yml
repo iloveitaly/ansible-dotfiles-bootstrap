@@ -16,7 +16,6 @@
       for script in install.sh install bootstrap.sh bootstrap script/bootstrap setup.sh setup script/setup; do
         if [ -f "./$script" ]; then
           echo "Executing dotfiles setup script: $script"
-          env
           bash "./$script"
           exit $?
         fi

@@ -16,7 +16,6 @@ jobs:
         MOLECULE_IMAGE: ["rsprta/debian-ansible:bullseye"]
         MOLECULE_SCENARIO: ["default"]
     env:
-      # DOCKER_HOST: tcp://localhost:2375
       PY_COLORS: 1
       ANSIBLE_FORCE_COLOR: 1
     steps:
