@@ -16,6 +16,11 @@
         name: git
         state: present
 
+    - name: Install bash
+      package:
+        name: bash
+        state: present
+
     - name: Create testing directories
       file:
         path: "{{ item }}"
