@@ -21,6 +21,11 @@
         name: bash
         state: present
 
+    - name: Install rsync
+      package:
+        name: rsync
+        state: present
+
     - name: Create testing directories
       file:
         path: "{{ item }}"
