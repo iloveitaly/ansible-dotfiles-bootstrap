@@ -1,6 +1,6 @@
-# Ansible Role: Dotfiles [![Ansible Role](https://img.shields.io/ansible/role/52749)](https://galaxy.ansible.com/radek_sprta/dotfiles) [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/radek-sprta/ansible-role-dotfiles)](https://gitlab.com/radek-sprta/ansible-role-dotfiles/-/tags) [![Ansible Role](https://img.shields.io/ansible/role/d/52749)](https://galaxy.ansible.com/radek_sprta/dotfiles) [![Ansible Role](https://img.shields.io/ansible/quality/52749)](https://galaxy.ansible.com/radek_sprta/dotfiles) [![Pipeline status](https://gitlab.com/radek-sprta/ansible-role-dotfiles/badges/master/pipeline.svg)](https://gitlab.com/radek-sprta/ansible-role-dotfiles/commits/master)
+# Ansible Role: Bootstrap Dotfiles [![Ansible Role](https://img.shields.io/ansible/role/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap) [![Ansible Role](https://img.shields.io/ansible/role/d/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap) [![Ansible Role](https://img.shields.io/ansible/quality/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap)
 
-Install a set of dotfiles from a given Git repository. By default, it will install my (Radek Sprta's) [dotfiles](https://github.com/radek-sprta/dotfiles), but you can use any set of dotfiles you'd like, as long as they follow a conventional format.
+Install a set of dotfiles from a given Git repository and run a installation or bootstrap script (like GitHub codespaces). By default, it will install my [dotfiles](https://github.com/iloveitaly/dotfiles), but you can use any set of dotfiles you'd like, as long as they follow a conventional format.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ dotfiles_recursive: true
 Clone recursively with submodules.
 
 ```
-dotfiles_repo: "https://gitlab.com/radek-sprta/dotfiles.git"
+dotfiles_repo: "https://gitlab.com/iloveitaly/dotfiles.git"
 dotfiles_repo_version: master
 ```
 
@@ -52,7 +52,7 @@ Whether the files in the repository start with dot or not.
 ```
 - hosts: localhost
   roles:
-    - { role: radek_sprta.dotfiles }
+    - { role: iloveitaly.dotfiles_bootstrap }
 ```
 
 ## License
@@ -61,4 +61,5 @@ MIT
 
 ## Author Information
 
-Radek Sprta <mail@radeksprta.eu>. Based on dotfiles role by [Jeff Geerling](https://www.jeffgeerling.com/).
+* Originally based on dotfiles role by [Jeff Geerling](https://www.jeffgeerling.com/).
+* Leveraged improvements by Radek Sprta <mail@radeksprta.eu>

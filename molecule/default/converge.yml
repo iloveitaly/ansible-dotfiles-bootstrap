@@ -36,4 +36,4 @@
         - /root/.kube
 
   roles:
-    - role: radek_sprta.dotfiles
+    - role: iloveitaly.dotfiles

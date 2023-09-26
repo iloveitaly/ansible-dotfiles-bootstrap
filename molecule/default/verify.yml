@@ -46,7 +46,7 @@
   tasks:
     - name: Check dotfiles state
       ansible.builtin.stat:
-        path: "/root/.{{ item }}"
+        path: "/root/{{ item }}"
       register: dotfiles_symlinks
       with_items: "{{ dotfiles }}"
 

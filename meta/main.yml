@@ -2,12 +2,12 @@
 dependencies: []
 
 galaxy_info:
-  role_name: dotfiles
-  namespace: radek_sprta
+  role_name: dotfiles_bootstrap
+  namespace: iloveitaly
   author: Michael Bianco
-  description: Install a set of dotfiles from a given repository.
+  description: Install a set of dotfiles from a given repository and run a bootstrap script.
   license: MIT
-  issue_tracker_url: https://gitlab.com/iloveitaly/ansible-dotfiles-bootstrap/
+  issue_tracker_url: https://github.com/iloveitaly/ansible-dotfiles-bootstrap/
   min_ansible_version: "2.10"
   platforms:
     - name: GenericUNIX
@@ -24,3 +24,4 @@ galaxy_info:
     - system
     - dotfiles
     - configuration
+    - codespaces

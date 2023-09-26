@@ -9,7 +9,7 @@ arguments_specs:
         required: false
         type: bool
       dotfiles_repo:
-        default: "https://gitlab.com/radek-sprta/dotfiles.git"
+        default: "https://github.com/iloveitaly/dotfiles.git"
         description: Repository to download dotfiles from.
         required: false
         type: str
