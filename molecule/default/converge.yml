@@ -36,4 +36,4 @@
         - /root/.kube
 
   roles:
-    - role: iloveitaly.dotfiles
+    - role: iloveitaly.dotfiles_bootstrap
