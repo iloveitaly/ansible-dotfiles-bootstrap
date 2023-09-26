@@ -23,6 +23,8 @@
     chdir: "{{ dotfiles_repo_local_destination }}"
   register: bootstrap_output
   become: false
+  tags:
+    - molecule-idempotence-notest
 
 - name: Output from Dotfiles Bootstrap Script (stdout)
   ansible.builtin.debug:
