@@ -54,7 +54,7 @@
       ansible.builtin.assert:
         that:
           - "item.stat.exists"
-          - "item.stat.islnk"
+          - "not item.stat.islnk"
       loop_control:
         label: "{{ item.item }}"
       with_items: "{{ dotfiles_symlinks.results }}"
