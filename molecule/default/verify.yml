@@ -29,11 +29,6 @@
       - .config/node/readme.md
       - .config/ov/config.yml
       - .ipython/profile_default/ipython_config.py
-      - .ipython/profile_default/postgres_config
-      - .ipython/profile_default/startup/clip.py
-      - .ipython/profile_default/startup/clip2.py
-      - .ipython/profile_default/startup/fzf_ctrl_r.py
-      - .ipython/profile_default/startup/typing.py
 
   tasks:
     - name: Check dotfiles state
