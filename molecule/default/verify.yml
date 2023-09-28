@@ -24,9 +24,6 @@
       - .config/bat/config
       - .config/direnv
       - .config/direnv/direnv.toml
-      - .config/node/download_missing_stacktrace_file.js
-      - .config/node/patcher.js
-      - .config/node/readme.md
       - .config/ov/config.yml
       - .ipython/profile_default/ipython_config.py
 
