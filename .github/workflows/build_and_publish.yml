@@ -43,6 +43,7 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
           fallback-version: "0.1.0"
+          skip-version-file: "true"
           output-file: "CHANGELOG.md"
 
       - name: Ansible Galaxy Publish
