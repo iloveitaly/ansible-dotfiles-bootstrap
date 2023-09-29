@@ -51,4 +51,5 @@ jobs:
 
       - name: Ansible Galaxy Publish
         if: ${{steps.changelog.outputs.skipped == 'false'}}
+        # gh secret set GALAXY_TOKEN --app actions --body $GALAXY_TOKEN
         run: ansible-galaxy role import --token ${{ secrets.GALAXY_TOKEN }} ${{ github.actor }} ${{ github.event.repository.name }}
