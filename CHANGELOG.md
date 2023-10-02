@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.3.0...v0.4.0) (2023-10-02)
+
+
+### Features
+
+* another bump to push package to galaxy ([5259777](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/52597772506d41356c89a5b9e01aaf49e33f8e30))
+
+
+
 # [0.3.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.2.0...v0.3.0) (2023-10-02)
 
 
