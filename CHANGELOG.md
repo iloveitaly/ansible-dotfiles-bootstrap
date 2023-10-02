@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.2.0...v0.3.0) (2023-10-02)
+
+
+### Features
+
+* removing gitlab (mostly to trigger a new push) ([80b7cb4](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/80b7cb47dfaa5dcfbb1a952c19406ad4d359d87f))
+
+
+
 # [0.2.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.1.0...v0.2.0) (2023-09-29)
 
 
