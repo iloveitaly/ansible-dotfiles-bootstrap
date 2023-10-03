@@ -49,6 +49,9 @@ jobs:
           skip-version-file: "true"
           output-file: "CHANGELOG.md"
 
+      - name: Ansible Galaxy Version
+        run: ansible-galaxy --version
+
       - name: Ansible Galaxy Publish
         if: ${{steps.changelog.outputs.skipped == 'false'}}
         # gh secret set GALAXY_TOKEN --app actions --body $GALAXY_TOKEN

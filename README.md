@@ -1,4 +1,5 @@
-# Ansible Role: Bootstrap Dotfiles [![Ansible Role](https://img.shields.io/ansible/role/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap) [![Ansible Role](https://img.shields.io/ansible/role/d/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap) [![Ansible Role](https://img.shields.io/ansible/quality/52749)](https://galaxy.ansible.com/iloveitaly/dotfiles_bootstrap)
+# Ansible Role: Bootstrap Dotfiles ![Ansible Role](https://img.shields.io/ansible/role/d/36915)
+
 
 Install a set of dotfiles from a given Git repository and run a installation or bootstrap script (like GitHub codespaces). By default, it will install my [dotfiles](https://github.com/iloveitaly/dotfiles), but you can use any set of dotfiles you'd like, as long as they follow a conventional format.
 
