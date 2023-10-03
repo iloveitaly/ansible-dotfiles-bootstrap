@@ -3,25 +3,8 @@ dependencies: []
 
 # https://github.com/ansible/galaxy-importer/blob/2c5c7c05fdfb0835878234b36de32902c703616d/galaxy_importer/schema.py#L387
 galaxy_info:
-  role_name: dotfiles_bootstrap
   author: Michael Bianco
   description: Install a set of dotfiles from a given repository and run a bootstrap script.
   license: MIT
   issue_tracker_url: https://github.com/iloveitaly/ansible-dotfiles-bootstrap/
   min_ansible_version: "2.10"
-  platforms:
-    - name: GenericUNIX
-      versions:
-        - all
-    - name: GenericBSD
-      versions:
-        - all
-    - name: GenericLinux
-      versions:
-        - all
-  galaxy_tags:
-    - development
-    - system
-    - dotfiles
-    - configuration
-    - codespaces
