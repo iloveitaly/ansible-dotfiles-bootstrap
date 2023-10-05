@@ -3,6 +3,7 @@ dependencies: []
 
 # https://github.com/ansible/galaxy-importer/blob/2c5c7c05fdfb0835878234b36de32902c703616d/galaxy_importer/schema.py#L387
 galaxy_info:
+  namespace: iloveitaly
   role_name: dotfiles_bootstrap
   author: Michael Bianco
   description: Install a set of dotfiles from a given repository and run a bootstrap script.
