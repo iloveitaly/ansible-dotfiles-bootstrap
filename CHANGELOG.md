@@ -1,3 +1,19 @@
+# [0.5.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.4.0...v0.5.0) (2023-10-05)
+
+
+### Bug Fixes
+
+* add back more fields ([5057b5d](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/5057b5dd27161d061ffcbfd87963d0f3188c6723))
+* remove more things and lets see if it gets better ([771c984](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/771c98417dc8da155360a05b048e60036349d2ee))
+* remove namespace ([2c18c36](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/2c18c3626833979e414c72e837485e8ded0b66f1))
+
+
+### Features
+
+* got the role import working, this should be done for now! ([3c194b3](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/commit/3c194b34713df153a6751da406feb05848ed4c9c))
+
+
+
 # [0.4.0](https://github.com/iloveitaly/ansible-dotfiles-bootstrap/compare/v0.3.0...v0.4.0) (2023-10-02)
 
 
